@@ -23,6 +23,33 @@ else
     ol
       list-style: decimal
 
+.sidebar-title-icon
+  @extend .icon
+  float:right
+  padding-right: 5px
+
+.icon-recent-posts
+  @extend .sidebar-title-icon
+  &:after
+    content: "\f1ea"
+
+.icon-categories
+  @extend .sidebar-title-icon
+  &:after
+    content: "\f02c"
+
+.icon-tags
+  @extend .sidebar-title-icon
+  &:after
+    content: "\f292"
+
+.icon-archives
+  @extend .sidebar-title-icon
+  &:after
+    content: "\f073"
+
+
+
 .category-list-count
 .tag-list-count
 .archive-list-count
