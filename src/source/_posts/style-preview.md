@@ -61,6 +61,9 @@ Suspendisse sit amet maximus ex. In consectetur eget tellus non interdum. Etiam 
         } 
     }
 ```
+
+---
+
 <div style="width:400px;"> 
 {% asset_img "test-pattern.jpg" "Test Pattern" %}
 <div>
