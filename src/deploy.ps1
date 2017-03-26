@@ -1,0 +1,1 @@
+hexo deploy --config _config.yaml,_config.deploy.yaml
