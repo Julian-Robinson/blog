@@ -32,12 +32,16 @@ body
 
 .outer
   clearfix()
-  max-width: (column-width + gutter-width) * columns + gutter-width
+  display:flex  
+  flex-direction: column;
   margin: 0 auto
-  padding: 0 gutter-width
-
+  @media mq-normal
+    flex-direction: row;
+  @media mq-large
+    flex-direction: row;
+  
 .inner
-  column(columns)
+  column(columns) 
 
 .left, .alignleft
   float: left
@@ -66,15 +70,19 @@ body
   .mobile-nav-on &
     left: mobile-nav-width
 
-if sidebar and sidebar isnt bottom
-  #main
-    @media mq-normal
-      column(main-column)
+#main 
+  flex: 2 1 main-column*(1/12*100)%
+  box-sizing: border-box
+  padding: 0 20px
+ /* @media mq-large
+    padding-left: 6%*/
 
-if sidebar is left
-  @media mq-normal
-    #main
-      float: right
+#sidebar
+  flex: 1 1 sidebar-column*(1/12*100)%
+  box-sizing: border-box
+  padding: 0 20px;
+/*  @media mq-large
+    padding-right: 3%*/
 
 .full-width 
   #main 
@@ -93,7 +101,7 @@ if sidebar is left
   &:before 
     content: "\f053"
  
-.next-icon
+.next-icon 
   @extend .icon
   padding-left:5px
   float: right
