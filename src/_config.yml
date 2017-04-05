@@ -15,7 +15,7 @@ disqus_shortname: jrblogtest
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://localhost:4000 #https://julian-robinson.github.io
 root: /
-permalink: :title/ # :year/:month/:day/:title/
+permalink: blog/:title/ # :year/:month/:day/:title/
 permalink_defaults:
 
 # Directory

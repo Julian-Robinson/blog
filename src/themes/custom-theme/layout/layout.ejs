@@ -3,13 +3,7 @@
   <div id="container">
     <div id="wrap">
       <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <% if (page.path == 'index.html'){ %>
-        <% var fullwidth = 'full-width'; %>
-        <div class='tag-summary'>
-          <%- partial('_widget/tagsummary') %>
-        </div> 
-      <% } %>
-      <div class="outer <%- fullwidth %>">
+      <div class="outer">
         <section id="main"><%- body %></section>
         <% if (theme.sidebar  && theme.sidebar !== 'bottom'){ %>
           <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
