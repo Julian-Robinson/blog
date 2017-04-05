@@ -102,7 +102,21 @@ body
   &:after
     content: "\f054"
 
-
+.contact-links
+  font-size: 200%
+  a
+    @extend .icon
+    margin: 0 10px
+    color: color-primary-light
+    text-decoration: none !important
+    &.twitter:after
+      content: "\f099"
+    &.github:after
+      content: "\f09b"
+    &.linkedin:after
+      content: "\f08c"
+    &.email:after
+      content: "\f0e0"
 
 @import "_extend"
 @import "_partial/index"

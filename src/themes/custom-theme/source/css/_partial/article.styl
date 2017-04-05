@@ -36,6 +36,9 @@
   padding: article-padding article-padding 0
 
 .article-title
+  margin-top: 20px
+  padding-bottom: 20px
+  border-bottom: 1px dashed color-border
   text-decoration: none
   font-size: 2em
   font-weight: 300
@@ -85,18 +88,12 @@
     border-bottom: 1px solid color-border
     padding: 10px 0
   blockquote
-    font-family: font-serif
-    font-size: 1.4em
-    margin: line-height 20px
-    text-align: center
-    footer
-      font-size: font-size
-      margin: line-height 0
-      font-family: font-sans
-      cite
-        &:before
-          content: "—"
-          padding: 0 0.5em
+    border-left: 4px solid color-accent
+    background-color: color-accent-lightest
+    margin: 10px 0px 
+    padding: 10px 20px
+    p 
+      margin: 0
   .pullquote
     text-align: left
     width: 45%
