@@ -7,7 +7,7 @@ disableShare: true
 
 <div style="width: 30%; margin: 0 10px 0 20px" class="right">![This is me](/about/jr.jpg "This is me")</div>
 
-I'm a software developer for a professional services company in Dunedin, New Zealand, where I have worked since 2011 developing line of business applications for a range of clients across a variety of industry sectors. 
+I'm a software developer for a professional services company in Dunedin, New Zealand, where I have worked since 2011 developing line of business enterprise applications for a range of clients across a variety of industry sectors. 
 
 I have a passion for developing quality maintainable software, creating great solutions that solve real business problems. I most enjoy working in a close team, mentoring others and celebrating shared successes.
 

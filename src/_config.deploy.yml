@@ -5,7 +5,7 @@
 # Site
 title: Julian Robinson
 subtitle: ""
-description: 
+description: Personal blog of Julian Robinson. Writing about software development and life.
 author: Julian Robinson
 language:
 timezone: Pacific/Auckland
@@ -67,6 +67,9 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: custom-theme
 app_insights: bf070f91-eb42-4ffb-8d5b-c23d85b6d985
+
+sitemap:
+    path: sitemap.xml
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
