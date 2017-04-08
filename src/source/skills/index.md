@@ -5,13 +5,13 @@ date: 2017/4/8
 slug: skills
 ---
 
-Below is a list of tools and technologies I'm familiar with and a rating of my experience and interest for each. 
+Below is an overview of some of the tools and technologies I'm familiar with and a rating between 1 to 5 representing my experience and interest for each. 
 
 <div><div class="interest" >**Interest**
 **5** Very Interested - I'm very interested in this technology and actively choose to use it. 
-**4** 
+**4**
 **3** I have no strong opinion 
-**2** 
+**2**
 **1** Not Interested - I'm not interested in this technology and would prefer to look for alternatives.
 </div>
 
