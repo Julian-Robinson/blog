@@ -20,3 +20,5 @@ You can find me here:
  
 <span class="contact-links"> <a class="github" href="https://github.com/Julian-Robinson" target="_blank">  </a> <a class="twitter" href="https://twitter.com/itsJulianR" target="_blank"></a> <a class="email" href="mailto:julian.robinson.nz+blog@gmail.com"></a> <a class="linkedin" href="https://www.linkedin.com/in/julian-robinson" target="_blank"></a>
 </span> 
+
+For a breakdown of my technical skills check [here](/skills).
