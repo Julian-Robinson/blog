@@ -5,7 +5,7 @@ comments: false
 disableShare: true
 ---
 
-<div style="width: 30%; margin: 0 10px 0 20px" class="right">![This is me](/about/jr.jpg "This is me")<div>
+<div style="width: 30%; margin: 0 10px 0 20px" class="right">![This is me](/about/jr.jpg "This is me")</div>
 
 I'm a software developer for a professional services company in Dunedin, New Zealand, where I have worked since 2011 developing line of business applications for a range of clients across a variety of industry sectors. 
 
