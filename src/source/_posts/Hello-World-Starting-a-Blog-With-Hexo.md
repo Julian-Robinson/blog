@@ -83,7 +83,7 @@ One other tweak I made was to enable Hexo's [asset folders](https://hexo.io/docs
 
 ## Deployment
 
-I opted to use Github pages for hosting this blog, it's free so hard to justify anything else just yet. Hexo includes a deployment plugin specifically for writing to Github, so deployments are super easy.
+I opted to use Github Pages for hosting this blog, it's free so hard to justify anything else just yet. Hexo includes a deployment plugin specifically for writing to Github, so deployments are super easy.
 
 Simply install the plugin with NPM:
 
@@ -97,8 +97,7 @@ deploy:
   type: git
   repo: https://github.com/Julian-Robinson/julian-robinson.github.io
 ```
-
-and with that running the Hexo Deploy command automatically pushed the latest build of my blog to my Github pages repository. Easy.
+and with that running the Hexo Deploy command automatically pushed the latest build of my blog to my Github Pages repository. Easy.
 
 It wasn't until I tried scripting it I ran into problems...
 
@@ -106,7 +105,9 @@ Even though the docs mention you can stack config files to overwrite values this
 
 Also, for some reason running the Hexo deploy command from PowerShell caused an error... somewhere... it just didn't generate any content.  Swapping to a shell script sorted it out. Very strange though... I've never see something like this before.
 
-Lastly, because the deployment script is force pushing to your Github repository each time I had to do a git clone into the .deploy_git folder before building so that the deployment history was maintained. 
+Because I'm using a custom domain then I also needed to create a CNAME file in my **source** folder that referenced my domain. Github Pages allows you to specify your custom domain through the UI and the end result is that this CNAME file is created for you but it is overwritten the next time you deploy.   
+
+Lastly, because the deployment script is force pushing to your Github repository each time I had to do a git clone into the .deploy_git folder before building so that the deployment history was maintained.
 
 ## Closing Thoughts
 
