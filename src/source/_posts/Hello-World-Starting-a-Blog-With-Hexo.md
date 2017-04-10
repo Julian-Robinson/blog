@@ -11,13 +11,11 @@ description: Describes my experience using Hexo to implement my new blogging pla
 date: 2017-04-10 22:17:47
 ---
 
-
-With the surge in popularity of static site generators and the simplicity and flexibility that these bring in regards to hosting I've finally decided to start a blog.   
+With the popularity of static site generators and the simplicity and flexibility that these bring in regards to hosting I've finally decided to start a blog!
+Read on for my experience getting a blog platform set up without worrying about hosting, security or paying for anything more than a domain name.
+<!-- More --> 
 
 The first decision was what generator to use.  While Jekyll is almost the de facto standard it requires a Ruby environment, which I don't typically use. I was after something similar that could run on a stack I was familiar with - for no other reason than it was one less thing to install on my machine. After evaluating several options I decided to give Hexo a go. 
-
-Read on for my experience getting up and running! 
-<!-- More --> 
 
 ## Setup
 
