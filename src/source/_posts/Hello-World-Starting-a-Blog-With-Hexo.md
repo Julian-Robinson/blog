@@ -12,7 +12,7 @@ date: 2017-04-10 22:17:47
 ---
 
 With the popularity of static site generators and the simplicity and flexibility that these bring in regards to hosting I've finally decided to start a blog!
-Read on for my experience getting a blog platform set up without worrying about hosting, security or paying for anything more than a domain name.
+Read on for my experience getting a blog platform set up without worrying about hosting or security and paying as little as possible for an online presense but without the restrictions of using a blog service.
 <!-- More --> 
 
 The first decision was what generator to use.  While Jekyll is almost the de facto standard it requires a Ruby environment, which I don't typically use. I was after something similar that could run on a stack I was familiar with - for no other reason than it was one less thing to install on my machine. After evaluating several options I decided to give Hexo a go. 
@@ -45,7 +45,7 @@ I spent a bit of time looking at some of the alternate themes but unfortunately 
 
 Instead I embarked on giving my blog a custom lick of paint, or bastardising the default theme... However you want to look at it. 
 
-This was mostly just simple things like moving some elements around and adjusting the style sheets so nothing too exciting. I have to admit I was impressed with the minimal style of Stylus (the css preprocessor of choice for Hexo) but unfortunately the Github project looks a bit dead so I don't think I'll go so far as adopting it over SASS.
+This was mostly just simple things like moving some elements around and adjusting the style sheets so nothing too exciting. I have to admit I was impressed with the minimal style of Stylus (the css preprocessor of choice for Hexo) but unfortunately the GitHub project looks a bit dead so I don't think I'll go so far as adopting it over SASS.
 One useful tool I found while doing this was [Coolor](https://coolors.co/) - You can upload an image (in this case my banner image) and it spits out a colour scheme based on the colours in the image. Sweet!
 
 The most beneficial part of this exercise was that digging through the theme in detail meant it gave me a better understanding of how everything hangs together. All the templates are written using EJS, which I hadn't seen before but reminds me of Razor in MVC. Overall it's pretty easy to pick up and use (it is just JavaScript in HTML after all).
@@ -81,7 +81,7 @@ One other tweak I made was to enable Hexo's [asset folders](https://hexo.io/docs
 
 ## Deployment
 
-I opted to use Github Pages for hosting this blog, it's free so hard to justify anything else just yet. Hexo includes a deployment plugin specifically for writing to Github, so deployments are super easy.
+I opted to use GitHub Pages for hosting this blog, it's free so hard to justify anything else just yet. Hexo includes a deployment plugin specifically for writing to GitHub, so deployments are super easy.
 
 Simply install the plugin with NPM:
 
@@ -95,7 +95,7 @@ deploy:
   type: git
   repo: https://github.com/Julian-Robinson/julian-robinson.github.io
 ```
-and with that running the Hexo Deploy command automatically pushed the latest build of my blog to my Github Pages repository. Easy.
+and with that running the Hexo Deploy command automatically pushed the latest build of my blog to my GitHub Pages repository. Easy.
 
 It wasn't until I tried scripting it I ran into problems...
 
@@ -103,9 +103,7 @@ Even though the docs mention you can stack config files to overwrite values this
 
 Also, for some reason running the Hexo deploy command from PowerShell caused an error... somewhere... it just didn't generate any content.  Swapping to a shell script sorted it out. Very strange though... I've never see something like this before.
 
-Because I'm using a custom domain then I also needed to create a CNAME file in my **source** folder that referenced my domain. Github Pages allows you to specify your custom domain through the UI and the end result is that this CNAME file is created for you but it is overwritten the next time you deploy.   
-
-Lastly, because the deployment script is force pushing to your Github repository each time I had to do a git clone into the .deploy_git folder before building so that the deployment history was maintained.
+Lastly, because the deployment script is force pushing to your GitHub repository each time I had to do a git clone into the .deploy_git folder before building so that the deployment history was maintained.
 
 ## Closing Thoughts
 
