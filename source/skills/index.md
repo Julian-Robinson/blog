@@ -7,22 +7,10 @@ slug: skills
 
 Below is an overview of some of the tools and technologies I'm familiar with and a rating between 1 to 5 representing my experience and interest for each. 
 
-<div><div class="interest" >**Interest**
-**5** Very Interested - I'm very interested in this technology and actively choose to use it. 
-**4**
-**3** I have no strong opinion 
-**2**
-**1** Not Interested - I'm not interested in this technology and would prefer to look for alternatives.
-</div>
-
-<div class="experience" >**Experience** 
-**5** Skilled - I would have no problem using this technology.
-**4** 
-**3** Comfortable - I'm comfortable using this technology but would need to do some research.
-**2** 
-**1** Familiar - I'm familiar with this technology but have not used it extensively. 
-</div> <div class="clear"> </div>
-</div>
+| 5 | 4 | 3 | 2 | 1
+---|:---:|:---:|:---:|:---:|:---:
+Experience | Skilled - I would have no problem using this technology. | | Comfortable - I'm comfortable using this technology but would need to do some research. | | Familiar - I'm familiar with this technology but have not used it extensively.
+Interest | Very Interested - I'm very interested in this technology and actively choose to use it. | | I have no strong opinion | | Not Interested - I'm not interested in this technology and would prefer to look for alternatives. 
 
 Bread and Butter | Experience | Interest
  --- |:---:| :---:
@@ -114,6 +102,14 @@ Dynamics CRM 					| 4 | 4
 document.addEventListener("DOMContentLoaded", function(event) { 
 
     var cells = document.getElementsByTagName("td");
+    var headers = document.getElementsByTagName("th");
+    
+    ApplyHighlight(headers);
+    ApplyHighlight(cells);
+});
+
+function ApplyHighlight(cells){ 
+
     for (var i=0, max=cells.length; i < max; i++) {
         var cell = cells[i];
         var color = null; 
@@ -135,5 +131,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
            cell.style.fontSize = "120%" 
         }
     }
-});
+};
 </script>
