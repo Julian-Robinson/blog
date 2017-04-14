@@ -81,6 +81,8 @@ One other tweak I made was to enable Hexo's [asset folders](https://hexo.io/docs
 
 ## Deployment
 
+> Check out my post on  {% post_link Hexo-pt2-Custom-Domains-and-HTTPS-and-Netlify hosting with Netlify %} - I managed to simplify this whole process and this section isn't required anymore. 
+
 I opted to use GitHub Pages for hosting this blog, it's free so hard to justify anything else just yet. Hexo includes a deployment plugin specifically for writing to GitHub, so deployments are super easy.
 
 Simply install the plugin with NPM:
