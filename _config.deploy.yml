@@ -14,7 +14,7 @@ disqus_shortname: jrblog-1
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://www.julianrobinson.nz
+url: https://www.julianrobinson.nz
 root: /
 permalink: blog/:title/
 permalink_defaults:
@@ -70,9 +70,3 @@ app_insights: bf070f91-eb42-4ffb-8d5b-c23d85b6d985
 
 sitemap:
     path: sitemap.xml
-
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repo: https://github.com/Julian-Robinson/julian-robinson.github.io

@@ -1,6 +1,6 @@
 .deploy_git
-src/public
-src/db.json
+public
+db.json
 
 # Logs
 logs
