@@ -44,7 +44,7 @@ First step is creating a new Netlify site - a trivial process.
     {% asset_img "site-is-live.png" "It's aaaallive!" %}
 
 Netlify gives you a temporary name for your site, in my case **money-changer-badger-46424**. Catchy. These are easy enough to change from your site settings page. 
-    {% asset_img "netlify-site-settings.png"  %}
+    {% asset_img "netlify-site-settings.png" "Netlify Site Settings" %}
 
 Here you can change your site name to something a bit friendlier and enable your custom domain by entering it in, both of which I did. You can also enable HTTPS - But we'll come back to this because it requires having you domain DNS record set up to redirect to your Netlify site. 
 This is what I was originally expecting to find in GitHub - all 3 steps in one place. 
@@ -60,7 +60,7 @@ While I was here I also set up a redirect for *blog.julianrobinson.nz*, because 
 With browsers now starting to warn users when they're visiting unsecured pages I think it's important to make sure you're serving all your content securely, even if there's no credentials to leak it's just a better experience.
 
 Netlify makes it ridiculously easy to set up. Once you've set up your domain redirection you simply hit **Enable HTTPS** from your site settings page and wait. Netlify and Let's Encrypt do their thing and in no time at all it's all sorted. 
-{% asset_img "site-secure.png"  %}
+{% asset_img "site-secure.png" "Site Secure"  %}
 
 Netlify also gives you an option to enforce HTTPS through HSTS - nice!
 
