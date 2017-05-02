@@ -4,6 +4,7 @@ menu:
   Archives: /archives
   About: /about
 rss: /atom.xml
+search: false
 
 # Content
 excerpt_link: Read More
