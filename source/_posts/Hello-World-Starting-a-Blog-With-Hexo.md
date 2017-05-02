@@ -2,8 +2,8 @@
 title: Hello World! Starting a Blog with Hexo
 tags:
   - Hexo
-  - Blog
-  - Static Site
+  - Blogging
+  - Static Sites
 category:
   - Blog
   - Hexo

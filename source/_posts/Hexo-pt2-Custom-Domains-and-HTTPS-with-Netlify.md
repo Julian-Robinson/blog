@@ -2,7 +2,7 @@
 title: 'Hexo pt2: Custom Domains and HTTPS with Netlify'
 tags:
   - Hexo
-  - Blog
+  - Blogging
   - Netlify
 category:
   - Blog
