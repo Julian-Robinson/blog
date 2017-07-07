@@ -4,7 +4,7 @@ tags:
   - Azure
   - WCF
   - Hybrid Connections
-Categories:
+category:
   - Azure
 date: 2017-07-08 00:39:27
 ---
