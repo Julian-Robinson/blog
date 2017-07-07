@@ -9,14 +9,13 @@ Categories:
 date: 2017-07-08 00:39:27
 ---
 
-
-Currently at work we're building a UWP application that's required to retrieve information from a Dynamics AX 2012 implementation. Not surprisingly the AX server is locked down pretty tightly behind the organisations firewall and only accessible internally. 
-We already had a dedicated Web API hosted in Azure for our application and by using **Azure Hybrid Connections** we've been able to to easily allow our Azure API to communicate with the AX WCF Services as if they are within the same network and without unnecessarily exposing the AX web services. 
+Currently at work we're building a UWP application that's required to retrieve information from a Dynamics AX 2012 implementation. Not surprisingly the AX server is locked down pretty tightly behind the organisation's firewall and is only accessible internally. 
+We already have a dedicated Web API hosted in Azure for our application and by using **Azure Hybrid Connections** we've been able to to easily allow our Azure API to communicate with the AX WCF Services as if they are within the same network and without unnecessarily exposing the AX web services. 
 This post illustrates the setup required to get an Azure Api communicating with a locally hosted WCF Service through a Hybrid Connection.
 <!-- More --> 
 
 ## Sample Code
-To help illustrate the components I've put some code together to represent the components at play. This is available on my GitHub here: [https://github.com/Julian-Robinson/AzureHybridConnectionExample]()
+To help illustrate the components I've put some code together to represent the components at play. This is [available on GitHub](https://github.com/Julian-Robinson/AzureHybridConnectionExample).
 
 The solution itself contains two projects: 
 1. **WCFService** - a dead simple WCF Calculator Service with a couple of methods - *Sum* and *Multiply*. Represents our internal WCF service - not accessible over the internet. 
