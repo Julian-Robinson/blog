@@ -1,10 +1,12 @@
 ---
 title: The 80% Architecture - Foundations
 categories:
-  - Software Development
-  - The 80% Architecture
+ - Software Development
+ - The 80% Architecture
 date: 2017-07-25 22:23:25
 tags:
+ - Architecture
+ - Dependency Inversion
 ---
 
 
