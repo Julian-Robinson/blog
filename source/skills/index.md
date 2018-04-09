@@ -1,7 +1,7 @@
 ---
 title: Skills and Experience
 comments: false
-date: 2017/4/8
+date: 2018/4/9
 slug: skills
 ---
 
@@ -19,15 +19,15 @@ Javascript        				| 5 | 5
 Html &amp; CSS         			| 5 | 5
 T-SQL                  			| 5 | 5
 .Net Framework         			| 5 | 5
-.Net Core              			| 3 | 5 
+.Net Core              			| 5 | 5 
 
  Web Applications | Experience | Interest
  --- |:---:| :---:
-ASP.Net MVC            			| 5 | 5
-ASP.Net WebAPI         			| 5 | 5
+ASP.Net MVC            			| 5 | 3
+ASP.Net WebAPI         			| 5 | 4
 ASP.Net Core           			| 4 | 5
-Material Design        			| 3 | 5
-Bootstrap              			| 4 | 3
+Material Design        			| 3 | 3
+Bootstrap              			| 4 | 4
 
 Javascript Frameworks and Tools | Experience | Interest
  --- |:---:| :---:
@@ -37,14 +37,14 @@ Sass              				| 4 | 5
 NodeJS            				| 3 | 4
 Typescript        				| 3 | 5
 React             				| 2 | 5
-Angular           				| 4 | 2
+Angular           				| 3 | 2
 Knockout          				| 3 | 2
 
 Native Applications | Experience | Interest
  --- |:---:| :---:
-UWP Applications 				| 3 | 4 
+UWP Applications 				| 4 | 4 
 Xaml / WPF 						| 4 | 2
-Xamarin							| 2 | 4 
+Xamarin							| 4 | 4 
 
  Cloud | Experience | Interest
  --- |:---:| :---:
@@ -53,12 +53,14 @@ Azure Active Directory 			| 5 | 5
 Azure SQL 						| 4 | 5 
 Azure Functions 				| 3 | 5
 Azure Event Hub        			| 2 | 5
+Azure Cognitive Services        | 4 | 5
+Azure AI & Machine Learning     | 2 | 5
 Cloud Design Patterns 			| 3 | 4
 
  Frameworks and Tools | Experience | Interest
  --- |:---:| :---:
-Entity Framework 				| 5 | 4
-Entity Framework Core 			| 3 | 5
+Entity Framework 				| 3 | 3
+Entity Framework Core 			| 5 | 5
 Visual Studio 					| 5 | 5
 Visual Studio Team Services 	| 5 | 5 
 VS Code 						| 4 | 4
@@ -67,7 +69,7 @@ Powershell / Bash Script 		| 3 | 5
 
  Patterns and Practices | Experience | Interest
  --- |:---:| :---:
-Domain Driven Design 			| 3 | 5
+Domain Driven Design 			| 4 | 5
 Hexagonal Architecture 			| 4 | 5
 DI & IoC 						| 5 | 5
 Object Oriented Principles      | 5 | 5
@@ -88,7 +90,7 @@ Leading Teams 					| 4 | 4
 Sql Server 						| 4 | 4
 Sql Server Integration Services | 4 | 3
 Identity Server 4 				| 3 | 4
-Dynamics CRM 					| 4 | 4
+Dynamics 365 					| 4 | 4
 
 ### Business Domain / Project Experience
 - Rostering and scheduling  
