@@ -1,7 +1,8 @@
 ---
-title:  Blazor - not just another client side framework. 
+title:  Blazor - Not just another client side framework. 
 tags: 
 - Blazor
+- First Look
 category:
 - .NET
 description: An initial look at the new experimental Blazor framework for running .NET on the client. 
@@ -10,7 +11,7 @@ date: 2018-07-22 21:34:42
 
 Blazor - an experimental .NET web framework running C# in the client side using WebAssembly has been causing quite a stir over the last few months, those fatigued trying to keep up with JavaScript's Framework-of-the-Month have been keeping a keen eye on Blazor with the (high) hopes of being able to ditch the JavaScript world completely. 
 
-I thought it was about time I jumped in and had a look at what it offered - so I spent an evening downloading and mucking around with the initial Blazor application template. This post covers my initial observations and thoughts while doing so and covers some simple Blazor topics such as it's Targets and Dependencies, Component Functions, Routing and Navigation, and the Component Lifecycle. 
+I thought it was about time I jumped in and had a look at what it offered - so I spent an evening downloading and mucking around with the initial Blazor application template. This post covers my initial observations and thoughts while doing so and covers some simple Blazor topics such as Blazor's targets and dependencies, component functions, routing and navigation, and the component lifecycle. 
 
 <!-- More --> 
 
@@ -23,7 +24,9 @@ I thought it was about time I jumped in and had a look at what it offered - so I
 ### Install Blazor templates: 
 At the time of writing the current Blazor version was 0.4.0
 - Install the Blazor templates  
-```dotnet new -i Microsoft.AspNetCore.Blazor.Templates::*```
+``` sh
+dotnet new -i Microsoft.AspNetCore.Blazor.Templates::*
+```
 
 This pulls down three Blazor templates: 
 1. **blazor** - A standalone Blazor client only.
@@ -32,7 +35,9 @@ This pulls down three Blazor templates:
 
 I opted to go with the Blazor Hosted template as it gives you a better picture of a full stack application. 
 - Create a new Blazor app  
-```dotnet new blazorhosted```
+``` sh
+dotnet new blazorhosted
+```
 
 The [Blazor docs article](https://blazor.net/docs/tutorials/build-your-first-blazor-app.html#build-components) does a pretty good job of explaining the template so I won't go into detail there - instead I'll call out some specific bits and pieces I found interesting. 
 
@@ -64,9 +69,9 @@ For example all of the following are valid:
 @page "/another/path"
 ```
 
-Parameters are then defined as properties in the `@function` block (or inherited class) and marked with the `[Parameter]` attribute. With a few conditions: 
+Parameters are then defined as properties in the `@functions` block (or inherited class) and marked with the `[Parameter]` attribute. With a few conditions: 
 - they share the same name as the route definition. 
-- they're accessible from the view class - so private for the `@function` block is ok, but protected at a minimum for inherited component classes. 
+- they're accessible from the view class - so private for the `@functions` block is ok, but protected at a minimum for inherited component classes. 
 - Properties have to be `string` types - it doesn't look like three's any automatic type conversion yet...
 
 ``` csharp
@@ -74,7 +79,7 @@ Parameters are then defined as properties in the `@function` block (or inherited
 protected string parameter { get; set; }
 ```
 
-One thing I noticed was that navigating to the same page with different parameters (eg from `/path/4` to `/path/5`) didn't trigger the OnInit method which must mean the page is initialised once and subsequent visits reuse the same page instance. An important consideration for how you store and populate page state. In the instance where you had logic to load customer details based on an id parameter wired into the OnInit method your page would likely not refresh.
+One thing I noticed was that navigating to the same page with different parameters (eg from */path/4* to */path/5*) didn't trigger the OnInit method which must mean the page is initialised once and subsequent visits reuse the same page instance. An important consideration for how you store and populate page state. In the instance where you had logic to load customer details based on an id parameter wired into the OnInit method your page would likely not refresh.
 
 Which brings me to the... 
 
@@ -101,7 +106,7 @@ What I'm really excited about though is the ability to reference and use any C# 
 
 Looking forward to seeing how Blazor develops! 
 
-If you're interested you can find the code I hacked around while writing this on [my Github.](https://github.com/Julian-Robinson/FirstLook-Blazor)
+If you're interested you can find the code I hacked around while writing this on [my Github.](https://github.com/Julian-Robinson/FirstLook-Blazor) There's not much there but may be useful. 
 
 
 ### References
