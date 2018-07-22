@@ -48,7 +48,7 @@ If we stick with the overused example of an app that displays a list of movies t
 1. The **MovieDBRepository** implements the **IMovieReader** interface - reading the list of movies from the database and returning them as **MovieDTOs**
 1. The MovieDTOs are returned back through the application to the **View Model** - where they are transformed to **MovieItemViewModels** to be displayed.
 
-{% asset_img "uml.png" "First UML I've done for awhile!" %}
+{% asset_img "uml.png" "First UML I\'ve done for awhile!" %}
 
 Now this example looks overkill (and it is, because the problem is relatively simple) but the trick is that in each module we have components that focus on **exactly** what they need to do. The ViewModels focus on the properties that are being displayed to the user. The MovieDTO is purely for transferring data between modules and could be made up of data that's persisted in multiple locations (for example the movie's rating could be sourced from IMDB). Also, by forcing out data access modules to return DTOs defined in the application module we avoid taking hard dependencies on things like Entity Framework so we can swap these out at any time much easier. Remember - we're focusing on flexibility here - and this setup allows us to easily change how things are implemented, often without changing method signatures.
 
