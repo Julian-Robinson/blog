@@ -3,7 +3,7 @@
  <div class="inner">
       <nav id="main-nav">
         <a id="main-nav-toggle" class="nav-icon"></a>
-       <span class="main-nav-title"><%= config.title %> </span>         
+       <a class="main-nav-title" href="<%- url_for(config.url) %>"><%= config.title %> </a>         
         <% for (var i in theme.menu){ %>
           <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
         <% } %>
