@@ -88,7 +88,7 @@ The component lifecycle looks straightforward enough and allows you to hook into
 
 1. **OnInit{Async}** - Executes after a component has been initialised. 
 1. **OnParametersSet{Async}** - Executes after the parameters from the route or the parent component have been set. A good candidate for loading data. 
-1. **OnAfterRender{Async}** - Is called each time a component has finished rendering. If your component has Javascript UI components (eg a datepicker) then this is a good place to initialise those scripts. 
+1. **OnAfterRender{Async}** - Is called each time a component has finished rendering. If your component has JavaScript UI components (eg a datepicker) then this is a good place to initialise those scripts. 
 
 There's also two methods you can override to change the default behaviour of your components: 
 - **SetParameters** - Allows you to set parameters however you like. This could be a good candidate for parameter validation or type conversions. 
@@ -100,7 +100,7 @@ Lastly there's disposing of components - this is handled for any class that impl
 
 For a framework that's essentially still a big experiment it's already got a lot of bases covered. At a first glace the framework just *makes sense* - you're using familiar concepts to stitch all these things together, such as inheritance for a component code behind or using attributes to associate properties with parameters.  
 
-One area that still has a few unknowns that I'll need to investigate more is the best way to tie in existing Javascript tooling and components. I'm sure I'll want to bring in a CSS preprocessor pretty quickly as well as a UX framework so will be interesting to see what's really required here, or what Razor now offers in this space, if anything. 
+One area that still has a few unknowns that I'll need to investigate more is the best way to tie in existing JavaScript tooling and components. I'm sure I'll want to bring in a CSS preprocessor pretty quickly as well as a UX framework so will be interesting to see what's really required here, or what Razor now offers in this space, if anything. 
 
 What I'm really excited about though is the ability to reference and use any C# library on the client and server side - reusing models is a massive bonus as it simplifies the whole end to end process. I've also always found writing and running automated tests in JavaScript much more difficult than C# so being able to have your client side using the same test tools as the server side is pretty appealing. 
 
