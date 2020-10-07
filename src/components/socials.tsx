@@ -11,7 +11,7 @@ const SocialLink: React.FC<SocialLinkProps> = ({
   className,
   newWindow,
 }) => (
-  <a href={href} target={newWindow ? "_blank" : null}>
+  <a href={href} target={newWindow ? "_blank" : null} rel="noopener noreferrer">
     <i className={"icon m-3 hover:text-blue-200 " + className}></i>
   </a>
 );

@@ -80,7 +80,7 @@ const IndexPage: React.FC<PageProps<{}>> = () => {
         imageFluid={data.technology.childImageSharp.fluid}
       >
         <ul>
-          <li>C# .NET, .NET Core</li>
+          <li>C# .NET & .NET Core</li>
           <li>ASP.NET</li>
           <li>JavaScript, TypeScript & React</li>
           <li>SQL Server</li>
