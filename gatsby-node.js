@@ -11,7 +11,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     "type MarkdownRemark implements Node { frontmatter: Frontmatter }",
     `type Frontmatter {
       title: String!
-      published: Date @dateformat()
+      published: Date @dateformat
       description: String
     }`,
   ]
