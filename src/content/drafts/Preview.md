@@ -2,6 +2,7 @@
 title: Post Style Preview
 sharing: disabled
 comments: false
+debug: true
 ---
 
 Nothing to see here - just a post with several content elements so I can see applied styles.

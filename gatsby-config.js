@@ -6,6 +6,13 @@ module.exports = {
     role: `Software Developer from Dunedin, NZ`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        trackingId: "UA-98278702-1",
+        head: false,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-sass`,
@@ -37,8 +44,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `jr-web`,
-        short_name: `jrweb`,
+        name: `Julian Robinson`,
+        short_name: `Julian R`,
         start_url: `/`,
         background_color: `#2f394d`,
         theme_color: `#2f394d`,
@@ -47,4 +54,4 @@ module.exports = {
       },
     },
   ],
-}
+};

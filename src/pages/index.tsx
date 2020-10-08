@@ -10,22 +10,22 @@ const IndexPage: React.FC<PageProps<{}>> = () => {
     query HomeQuery {
       personal: file(relativePath: { eq: "fingerprint.png" }) {
         childImageSharp {
-          fluid(maxWidth: 125) {
-            ...GatsbyImageSharpFluid
+          fixed(width: 125) {
+            ...GatsbyImageSharpFixed_noBase64
           }
         }
       }
       expertise: file(relativePath: { eq: "expertise.png" }) {
         childImageSharp {
-          fluid(maxWidth: 125) {
-            ...GatsbyImageSharpFluid
+          fixed(width: 125) {
+            ...GatsbyImageSharpFixed_noBase64
           }
         }
       }
       technology: file(relativePath: { eq: "technology.png" }) {
         childImageSharp {
-          fluid(maxWidth: 125) {
-            ...GatsbyImageSharpFluid
+          fixed(width: 125) {
+            ...GatsbyImageSharpFixed_noBase64
           }
         }
       }
@@ -51,7 +51,7 @@ const IndexPage: React.FC<PageProps<{}>> = () => {
       </div>
       <ImagePanel
         header="Personal Skills"
-        imageFluid={data.personal.childImageSharp.fluid}
+        imageFixed={data.personal.childImageSharp.fixed}
       >
         <ul>
           <li>Good Communicator</li>
@@ -64,7 +64,7 @@ const IndexPage: React.FC<PageProps<{}>> = () => {
 
       <ImagePanel
         header="Expertise"
-        imageFluid={data.expertise.childImageSharp.fluid}
+        imageFixed={data.expertise.childImageSharp.fixed}
       >
         <ul>
           <li>Solution Analysis and Design</li>
@@ -77,7 +77,7 @@ const IndexPage: React.FC<PageProps<{}>> = () => {
 
       <ImagePanel
         header="Tools & Technology"
-        imageFluid={data.technology.childImageSharp.fluid}
+        imageFixed={data.technology.childImageSharp.fixed}
       >
         <ul>
           <li>C# .NET & .NET Core</li>
