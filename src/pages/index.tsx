@@ -54,11 +54,11 @@ const IndexPage: React.FC<PageProps<{}>> = () => {
         imageFixed={data.personal.childImageSharp.fixed}
       >
         <ul>
-          <li>Good Communicator</li>
-          <li>Focused and Motivated</li>
-          <li>Mentor and Teacher</li>
-          <li>Project and Team Leader</li>
-          <li>Attention to Detail</li>
+          <li>Good communicator</li>
+          <li>Focused and motivated</li>
+          <li>Mentor and teacher</li>
+          <li>Project and team leader</li>
+          <li>Attention to detail</li>
         </ul>
       </ImagePanel>
 
@@ -67,10 +67,10 @@ const IndexPage: React.FC<PageProps<{}>> = () => {
         imageFixed={data.expertise.childImageSharp.fixed}
       >
         <ul>
-          <li>Solution Analysis and Design</li>
-          <li>Architecture & Design Patterns</li>
-          <li>Continuous Delivery & DevOps</li>
-          <li>Automated Testing</li>
+          <li>Solution analysis and design</li>
+          <li>Architecture & design patterns</li>
+          <li>Continuous delivery & devops</li>
+          <li>Automated testing</li>
           <li>Documentation</li>
         </ul>
       </ImagePanel>
@@ -81,7 +81,7 @@ const IndexPage: React.FC<PageProps<{}>> = () => {
       >
         <ul>
           <li>C# .NET & .NET Core</li>
-          <li>ASP.NET</li>
+          <li>ASP.NET Core</li>
           <li>JavaScript, TypeScript & React</li>
           <li>SQL Server</li>
           <li>Azure & AWS cloud services</li>
