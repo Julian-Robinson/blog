@@ -10,7 +10,7 @@ type Props = {
 const Layout: React.FC<Props> = ({ children }) => {
   return (
     <div className="flex flex-col md:flex-row md:h-screen">
-      <header className="px-16 py-20 centre flex flex-col justify-between items-center text-white bg-blue-900">
+      <header className="px-20 py-20 centre flex flex-col justify-between items-center text-white bg-slateblue">
         <Profile />
         <Socials />
       </header>

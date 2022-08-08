@@ -5,5 +5,6 @@
  */
 // You can delete this file if you're not using it
 
-import "./src/styles.scss"
-require("typeface-open-sans")
+import './src/styles/global.css'
+import "@fontsource/open-sans"
+import "@fontsource/open-sans/300.css"

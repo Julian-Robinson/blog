@@ -1,31 +1,51 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  purge: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx"],
+  content: [
+    "./src/**/*.js",
+    "./src/**/*.jsx",
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+  ],
   theme: {
     screens: {
       sm: "640px",
-      md: "769px",
+      md: "821px",
       lg: "1025px",
       xl: "1281px",
     },
-    fontFamily: {
-      sans: ["Open Sans", ...defaultTheme.fontFamily.sans],
-      serif: ["Georgia", "Cambria"],
-      display: ["Oswald"],
-      body: ["Open Sans"],
-    },
-    typography: {
-      default: {
-        css: {
-          li: {
-            margin: 0,
+    extend: {
+      colors: {
+        slateblue: "#2a4365",
+      },
+      fontFamily: {
+        sans: ["Open Sans", ...defaultTheme.fontFamily.sans],
+        serif: ["Georgia", "Cambria"],
+        display: ["Oswald"],
+        body: ["Open Sans"],
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            li: {
+              margin: 0,
+            },
+            h1: {
+              fontWeight: 300,
+            },
+            h2: {
+              fontWeight: 300,
+            },
+            h3: {
+              fontWeight: 300,
+            },
+            h4: {
+              fontWeight: 300,
+            },
           },
         },
       },
     },
-    extend: {},
   },
-  variants: {},
   plugins: [require("@tailwindcss/typography")],
 };

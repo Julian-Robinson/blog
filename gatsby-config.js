@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Julian Robinson`,
-    description: `A senior software developer building cloud applications from Dunedin, New Zealand.`,
+    description: `A lead software engineer building cloud applications from Dunedin, New Zealand.`,
     author: `Julian Robinson`,
-    role: `Software Developer from Dunedin, NZ`,
+    role: `Software Engineer from Dunedin, NZ`,
   },
   plugins: [
     {
@@ -14,15 +14,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-        postCssPlugins: [
-          require("tailwindcss"),
-          require("./tailwind.config.js"),
-        ],
-      },
-    },
+    'gatsby-plugin-postcss',
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -39,8 +31,9 @@ module.exports = {
         path: `${__dirname}/src/assets/images`,
       },
     },
-    `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

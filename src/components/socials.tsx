@@ -1,38 +1,43 @@
 import React from "react";
+import { IconType } from "react-icons";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 interface SocialLinkProps {
   href: string;
-  className: string;
+  icon: IconType;
   newWindow?: boolean;
 }
 
 const SocialLink: React.FC<SocialLinkProps> = ({
   href,
-  className,
+  icon: Icon,
   newWindow,
 }) => (
-  <a href={href} target={newWindow ? "_blank" : null} rel="noopener noreferrer">
-    <i className={"icon m-3 hover:text-blue-200 " + className}></i>
+  <a
+    href={href}
+    target={newWindow ? "_blank" : undefined}
+    rel="noopener noreferrer"
+  >
+    <Icon className="icon m-3 hover:text-blue-200"></Icon>
   </a>
 );
 
-const Socials: React.FC<{}> = () => (
-  <div className="flex flex-row text-2xl m-8">
-    <SocialLink
-      href="https://github.com/Julian-Robinson"
-      className="fab fa-github"
-      newWindow
-    />
-    <SocialLink
-      href="https://www.linkedin.com/in/julian-robinson"
-      className="fab fa-linkedin"
-      newWindow
-    />
-    <SocialLink
-      href="mailto:contact@julianrobinson.nz?subject=Hi"
-      className="far fa-envelope"
-    />
-  </div>
-);
+const Socials: React.FC<{}> = () => {
+  return (
+    <div className="flex flex-row text-2xl m-8">
+      <SocialLink
+        href="https://github.com/Julian-Robinson"
+        icon={FaGithub}
+        newWindow />
+      <SocialLink
+        href="https://www.linkedin.com/in/julian-robinson"
+        icon={FaLinkedin}
+        newWindow />
+      <SocialLink
+        href="mailto:contact@julianrobinson.nz?subject=Hi"
+        icon={FaEnvelope} />
+    </div>
+  );
+};
 
 export default Socials;
